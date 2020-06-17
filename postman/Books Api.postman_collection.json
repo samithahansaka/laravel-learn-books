@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "55ea9646-e50c-4515-853c-b9db38a712c4",
+		"name": "Books Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Book",
+			"item": [
+				{
+					"name": "Get Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{LARAVEL_HOST}}/authors",
+							"host": [
+								"{{LARAVEL_HOST}}"
+							],
+							"path": [
+								"authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Satelite Technology ",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Technology related to satelites",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "39",
+									"type": "text"
+								},
+								{
+									"key": "author_id",
+									"value": "3",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{LARAVEL_HOST}}/books",
+							"host": [
+								"{{LARAVEL_HOST}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Book",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{LARAVEL_HOST}}/authors/51",
+							"host": [
+								"{{LARAVEL_HOST}}"
+							],
+							"path": [
+								"authors",
+								"51"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Book",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Samitha",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{LARAVEL_HOST}}/books/151",
+							"host": [
+								"{{LARAVEL_HOST}}"
+							],
+							"path": [
+								"books",
+								"151"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Book Patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Samitha Hansaka",
+									"type": "text"
+								}
+							],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{LARAVEL_HOST}}/books/151",
+							"host": [
+								"{{LARAVEL_HOST}}"
+							],
+							"path": [
+								"books",
+								"151"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Book",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [],
+							"options": {
+								"urlencoded": {}
+							}
+						},
+						"url": {
+							"raw": "{{LARAVEL_HOST}}/books/154",
+							"host": [
+								"{{LARAVEL_HOST}}"
+							],
+							"path": [
+								"books",
+								"154"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
